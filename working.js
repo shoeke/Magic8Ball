@@ -10,28 +10,27 @@ $(document).ready(function(){
 	"Make it So",
 	"Sorry, Ask Again"];
 
+
+
 //on button click, prompt with question, store that string as var question, insert question string into div
 	$( "#questionButton" ).click(function() {
+
+		$("#answer").hide();
+
 	   var question = prompt( "Ask Me Any YES or No question" );
 		 $("#questionShow").text(question + "???");
 
 		 var random = Math.floor(Math.random()*listOfAnswers.length);
 
 		 var showAnswer = listOfAnswers[random];
-		 $("#answer").text(showAnswer);
+		 $("#answer").text(showAnswer).fadeIn(3000);
+
 	});
 
 
 
-//get the random number
-//var random = Math.floor(Math.random()*listOfAnswers.length);
-//console.log(random);
-//use the random number to grab from the array
-//var showAnswer = listOfAnswers[random];
-//console.log(showAnswer);
 
-//$("#answer").text(showAnswer);
-
+$("#answer").hide();
 });//closing of jquery
 
 
