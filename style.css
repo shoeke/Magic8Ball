@@ -16,7 +16,18 @@ body {
   position:relative;
   width:80%;
 }
+
 .answer {
+  color: #222;
+  text-transform: uppercase;
+  margin: 0;
+  position: absolute;
+  top: 39%;
+  left: 43%;
+  width: 11%;
+  font-weight: bold;
+}
+/*.answer {
   position:absolute;
   width:14%;
   top:30%;
@@ -27,7 +38,7 @@ body {
   font-weight: bold;
   color: #222;
   text-transform: uppercase;
-}
+}*/
 
 .questionShow {
   position:absolute;

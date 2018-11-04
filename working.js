@@ -11,34 +11,34 @@ $(document).ready(function(){
 	"Sorry, Ask Again"];
 
 //on button click, prompt with question, store that string as var question, insert question string into div
-	$( "#questionButton" ).click(function() {
+$( "#questionButton" ).click(function() {
 
 		$("#answer").hide();
 		$("#questionShow").hide();
 
-		$("#8ball").attr( "src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png" );
+    $("#8ball").attr( "src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/8side.png" );
 
-	   var question = prompt( "Ask Me Any YES or No question" );
-		 $("#questionShow").text(question + "???");
 
-		 $("#questionShow").show();
+		setTimeout(function(){
+			var question = prompt( "Ask Me Any YES or No question" );
 
-		 $( "#8ball" ).effect( "shake" );
+			$("#8ball").attr( "src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png" );
 
-		 var random = Math.floor(Math.random()*listOfAnswers.length);
+			$("#questionShow").text(question + "???");
 
-		 var showAnswer = listOfAnswers[random];
-		 $("#answer").text(showAnswer).fadeIn(3000);
+			$("#questionShow").show();
+
+			$( "#8ball" ).effect( "shake" );
+
+ 		 var random = Math.floor(Math.random()*listOfAnswers.length);
+
+     var showAnswer = listOfAnswers[random];
+ 		 $("#answer").text(showAnswer).fadeIn(3000);
+
+	  }, 500);
 
 	});
 
 $("#answer").hide();
 $("#questionShow").hide();
 });//closing of jquery
-
-
-//<script>
-/*$( "button" ).click(function() {
-  $( "div" ).hide( "drop", { direction: "down" }, "slow" );
-});
-</script>*/
