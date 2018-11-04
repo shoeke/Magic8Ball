@@ -16,6 +16,8 @@ $(document).ready(function(){
 		$("#answer").hide();
 		$("#questionShow").hide();
 
+		$("#8ball").attr( "src", "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/answerside.png" );
+
 	   var question = prompt( "Ask Me Any YES or No question" );
 		 $("#questionShow").text(question + "???");
 

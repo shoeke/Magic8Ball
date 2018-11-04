@@ -24,6 +24,7 @@ body {
   margin-top:-60px;
   margin-left:-65px;
   font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   color: #222;
   text-transform: uppercase;
 }
@@ -32,7 +33,7 @@ body {
   position:absolute;
   width:30%;
   top:30%;
-  left:80%;
+  left:75%;
   margin-top:-60px;
   margin-left:-65px;
   font: 16px 'Open Sans', Helvetica, Arial, sans-serif;
