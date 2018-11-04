@@ -14,9 +14,14 @@ $(document).ready(function(){
 	$( "#questionButton" ).click(function() {
 
 		$("#answer").hide();
+		$("#questionShow").hide();
 
 	   var question = prompt( "Ask Me Any YES or No question" );
 		 $("#questionShow").text(question + "???");
+
+		 $("#questionShow").show();
+
+		 $( "#8ball" ).effect( "shake" );
 
 		 var random = Math.floor(Math.random()*listOfAnswers.length);
 
@@ -26,4 +31,12 @@ $(document).ready(function(){
 	});
 
 $("#answer").hide();
+$("#questionShow").hide();
 });//closing of jquery
+
+
+//<script>
+/*$( "button" ).click(function() {
+  $( "div" ).hide( "drop", { direction: "down" }, "slow" );
+});
+</script>*/
