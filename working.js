@@ -1,15 +1,38 @@
 $(document).ready(function(){
 
-//var question = "Ask Me Any YES or No question";
+	var listOfAnswers = [
+	"Maybe",
+	"That's Possible",
+	"For Sure",
+	"With Certainty",
+	"That's a NO",
+	"Ain't Happening",
+	"Make it So",
+	"Sorry, Ask Again"];
+
+//on button click, prompt with question, store that string as var question, insert question string into div
 	$( "#questionButton" ).click(function() {
 	   var question = prompt( "Ask Me Any YES or No question" );
 		 $("#questionShow").text(question + "???");
+
+		 var random = Math.floor(Math.random()*listOfAnswers.length);
+
+		 var showAnswer = listOfAnswers[random];
+		 $("#answer").text(showAnswer);
 	});
 
 
 
+//get the random number
+//var random = Math.floor(Math.random()*listOfAnswers.length);
+//console.log(random);
+//use the random number to grab from the array
+//var showAnswer = listOfAnswers[random];
+//console.log(showAnswer);
 
-});
+//$("#answer").text(showAnswer);
+
+});//closing of jquery
 
 
 /*//jquery wrap
